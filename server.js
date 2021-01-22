@@ -8,10 +8,10 @@ const PORT = process.env.PORT || 4000;
 
 app.use(express.json());
 
-app.get("/", function (req, res) {
+app.get("/return", function (req, res) {
   res.send("Hello");
 });
 
-app.post("/return", returnOrder);
+app.post("/label", returnOrder);
 
 app.listen(PORT, () => console.log(`Listening on http://localhost:${PORT}`));

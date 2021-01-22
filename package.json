@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "node ./database/build.js"
   },
   "author": "Jessica Deacon",
   "license": "ISC",
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/jessica440/golden_shoe_backend#readme",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "pg": "^8.5.1"
   }
