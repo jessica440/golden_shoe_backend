@@ -1,17 +1,17 @@
-// const express = require("express");
-// const app = express();
-// const returnOrder = require("./handlers/returnOrder");
+const express = require("express");
+const app = express();
+const returnOrder = require("./handlers/returnOrder");
 
-// require("dotenv").config();
+require("dotenv").config();
 
-// const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 4000;
 
-// app.use(express.json());
+app.use(express.json());
 
-// app.get("/", function (req, res) {
-//   res.send("Hello");
-// });
+app.get("/return", function (req, res) {
+  res.send("Hello");
+});
 
-// app.post("/return", returnOrder);
+app.post("/label", returnOrder);
 
-// app.listen(PORT, () => console.log(`Listening on http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`Listening on http://localhost:${PORT}`));
