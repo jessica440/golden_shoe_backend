@@ -7,6 +7,6 @@ const connectionString = process.env.DATABASE_URL;
 
 const db = new pg.Pool({ connectionString });
 
-db.query("SELECT * FROM RETURN_ORDER").then((result) => console.log(result));
+// db.query("SELECT * FROM RETURN_ORDER").then((result) => console.log(result));
 
 module.exports = db;

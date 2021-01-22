@@ -1,4 +1,5 @@
-const db = require("./database/connection");
+// const db = require("./database/connection");
+const returnInfo = require("../model/returnInfo");
 
 // function returnOrder(req, res) {
 //   db.query("SELECT * FROM return_order").then((res) => {
@@ -9,12 +10,12 @@ const db = require("./database/connection");
 // }
 
 const returnOrder = (req, res, next) => {
-  const id = req.return_order.id;
-  const order_number = req.return_order.order_number;
-  const quantity = req.return_order.quantity;
-  const reason = req.return_order.reason;
+  const id = req.returnOrder.id;
+  const orderNumber = req.returnOrder.ordernumber;
+  const quantity = req.returnOrder.quantity;
+  const reason = req.returnOrder.reason;
 
-  db(order_number, quantity, reason)
+  returnInfo(orderNumber, quantity, reason)
     .then(() => {
       res.status(201).send({
         message: "returns generated",
