@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/jessica440/golden_shoe_backend#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "pg": "^8.5.1"
   }
 }
