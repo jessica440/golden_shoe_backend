@@ -1,0 +1,23 @@
+{
+  "name": "golden_shoe_backend",
+  "version": "1.0.0",
+  "description": "Golden Shoe backend",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Jessica Deacon",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessica440/golden_shoe_backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jessica440/golden_shoe_backend/issues"
+  },
+  "homepage": "https://github.com/jessica440/golden_shoe_backend#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
