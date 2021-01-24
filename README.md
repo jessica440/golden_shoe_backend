@@ -1,3 +1,3 @@
 # golden_shoe_backend
 
-Database for return orders info
+Backend database for return orders info
